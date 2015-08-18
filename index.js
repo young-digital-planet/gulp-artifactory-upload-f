@@ -14,21 +14,22 @@ var PLUGIN_NAME = 'gulp-artifactory-upload';
 
 var parseResponse = function( responseData, callback ) {
 
-//	console.log( responseData );
-	var response = JSON.parse( responseData );
-	if ( response.errors ) {
-		var errStr = '';
-		response.errors.forEach( function( err ) {
-			if ( errStr.length > 0 ) {
-				errStr += ", ";
-			}
-			errStr += err.status + ": " + err.message;
-		} );
-		callback( errStr );
-	} else {
-		gutil.log('Successfully uploaded ' + response.size + " bytes to " + response.uri );
-		callback();
-	}
+	console.log( responseData );
+	callback();
+//	var response = JSON.parse( responseData );
+//	if ( response.errors ) {
+//		var errStr = '';
+//		response.errors.forEach( function( err ) {
+//			if ( errStr.length > 0 ) {
+//				errStr += ", ";
+//			}
+//			errStr += err.status + ": " + err.message;
+//		} );
+//		callback( errStr );
+//	} else {
+//		gutil.log('Successfully uploaded ' + response.size + " bytes to " + response.uri );
+//		callback();
+//	}
 };
 
 	

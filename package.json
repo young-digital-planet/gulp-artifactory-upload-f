@@ -1,11 +1,11 @@
 {
-  "name": "gulp-artifactory-upload",
+  "name": "gulp-artifactory-upload-f",
   "description": "Gulp plugin to deploy files to a JFrog Artifactory server.",
   "version": "1.1.0",
-  "homepage": "https://github.com/peteward44/gulp-artifactory-upload",
+  "homepage": "https://github.com/karolklp/gulp-artifactory-upload",
   "repository": {
     "type": "git",
-    "url": "https://github.com/peteward44/gulp-artifactory-upload.git"
+    "url": "https://github.com/karolklp/gulp-artifactory-upload.git"
   },
   "author": "Pete Ward <peteward44@gmail.com>",
   "main": "./index.js",
@@ -35,15 +35,18 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/peteward44/gulp-artifactory-upload/blob/master/LICENSE"
+      "url": "https://github.com/karolklp/gulp-artifactory-upload/blob/master/LICENSE"
     }
   ],
-  "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/peteward44/gulp-artifactory-upload/issues"
+    "url": "https://github.com/karolklp/gulp-artifactory-upload/issues"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha",
-    "testxml": "node_modules/.bin/mocha --recursive -R xunit-file test/"
-  }
+    "test": "mocha",
+    "testxml": "mocha --recursive -R xunit-file test/"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
 }
